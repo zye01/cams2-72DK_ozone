@@ -1,0 +1,8 @@
+station,stname,lat,lon,type,size
+DK0012R,Risø,55.694,12.089,regional,1
+DK0031R,Ulborg,56.29,8.427,regional,1
+DK0045A,Copenhagen,55.7,12.561,urban,1
+DK0046A,Odense,55.396,10.389,urban,1
+DK0053A,Aalborg,57.047,9.931,urban,1
+DK0054A,Keldsnor,54.754,10.716,regional,1
+DK0056A,Aarhus,56.16,10.194,urban,1
