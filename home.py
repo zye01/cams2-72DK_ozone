@@ -484,7 +484,7 @@ def initiate_state(state):
     if 'latlim' not in state:
         state.latlim, state.lonlim = [54.1,58.2], [7.1,15.9]
     if 'first_date' not in state:
-        state.first_date = date(2023,6,1)
+        state.first_date = date(2023,7,1)
     if 'last_date' not in state:
         state.last_date = date(2023,10,1)
     if 'mtrs' not in state:
