@@ -486,7 +486,7 @@ def initiate_state(state):
     if 'first_date' not in state:
         state.first_date = date(2023,7,1)
     if 'last_date' not in state:
-        state.last_date = date(2024,2,1)
+        state.last_date = date(2024,2,29)
     if 'mtrs' not in state:
         state.mtrs = ['MB', 'NMB', 'RMSE', 'Corr']
     state.autoload = True
