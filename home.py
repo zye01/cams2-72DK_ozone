@@ -332,6 +332,7 @@ def get_selected_data(state):
     state.ed = pd.to_datetime(f'{state.ed}T23:59:00Z')
     # print(state.st,state.ed)
     # print(state.adf['time'].unique())
+    state.adf['time'] = pd.to_datetime(state.adf['time'])
     state.sel_df = state.adf[(state.adf['time']>=state.st)&(state.adf['time']<=state.ed)]
     # print(state.sel_df['time'].unique())
     state.sel_df = state.sel_df[state.sel_df['Station'].isin(state.sel_station)]
@@ -483,9 +484,9 @@ def initiate_state(state):
     if 'latlim' not in state:
         state.latlim, state.lonlim = [54.1,58.2], [7.1,15.9]
     if 'first_date' not in state:
-        state.first_date = date(2023,7,1)
+        state.first_date = date(2023,6,1)
     if 'last_date' not in state:
-        state.last_date = date(2024,2,29)
+        state.last_date = date(2023,10,1)
     if 'mtrs' not in state:
         state.mtrs = ['MB', 'NMB', 'RMSE', 'Corr']
     state.autoload = True
